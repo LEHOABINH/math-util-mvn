@@ -40,14 +40,20 @@ public class MathUtility {
             return 1;
         }
         
-        long product = 1; // tich nhan don khoi dong tu 1
-        for (int i = 2; i <= n; i++) 
-            product *= i;
-        
-        return 1;
+       return n * getFactorial(n-1);
+       //Công thức đệ quy -recursion
+       
         
     }
 }
+
+//5! = 1.2.3.4.5 = 4!.5 = 5.4!
+//4! = 4.3!
+//3! = 3.2!
+//2! = 2.1!
+//1! = 1 STOP,hồi ngược lên trên
+
+//N! = N.(N-1)!
 
 //TDD: Test Driven Development phát triển p/m theo phong cách
 // COde đến đâu kiểm thử đến đó , viết code và viết test case/ test run
